@@ -32,7 +32,7 @@ void Budzet::pokaz() const {
 void Budzet::szukaj(string opis) const {
     bool znaleziono = false;
     for (auto t : lista) {
-        if (t->getOpis() == opis) {
+        if (t->getOpis().find(opis) != string::npos) {
             cout << t->typ() << " | " << t->getOpis() << " | " << t->wartosc() << " zl\n";
             znaleziono = true;
         }
