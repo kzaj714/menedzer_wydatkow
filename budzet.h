@@ -1,4 +1,3 @@
-
 #ifndef BUDZET_H
 #define BUDZET_H
 #include <string>
@@ -7,6 +6,7 @@ using namespace std;
 // wym. 1 - Klasa z atrybutami i metodami
 class Transakcja {
     // wym. 2 - Pola prywatne, dostepne tylko wewnatrz klasy
+private:
     string opis;
     double kwota;
 public:
